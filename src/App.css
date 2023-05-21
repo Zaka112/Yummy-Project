@@ -2,6 +2,34 @@
   text-align: center;
 }
 
+.navBar {
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+/* .navBarLinks{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  
+} */
+
+/* Home */
+.home {
+  height: 50vh;
+  background-image: url("assets/food.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.homeImages {
+  display: flex;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
