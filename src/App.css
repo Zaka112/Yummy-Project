@@ -11,11 +11,14 @@
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
+  font-weight: bold;
+  text-decoration: none;
 }
-.navBarLinks {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+.logo {
+  font-size: 50px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000;
 }
 
 /* Home */
@@ -43,6 +46,19 @@
   color: black;
   gap: 1rem;
   margin: 20px;
+}
+
+/* Favorite Item */
+.favList {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.favItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
 }
 .App-logo {
   height: 40vmin;
