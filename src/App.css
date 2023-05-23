@@ -1,5 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap");
 .App {
   text-align: center;
+  font-family: "Rajdhani", sans-serif;
 }
 
 .navBar {
@@ -10,12 +12,11 @@
   justify-content: space-around;
   align-items: center;
 }
-/* .navBarLinks{
+.navBarLinks {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  
-} */
+}
 
 /* Home */
 .home {
@@ -29,6 +30,19 @@
 }
 .homeImages {
   display: flex;
+  justify-content: space-between;
+}
+.homeImages img {
+  width: 175px;
+  border-radius: 50%;
+}
+/* Recipe List */
+.recipeGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  color: black;
+  gap: 1rem;
+  margin: 20px;
 }
 .App-logo {
   height: 40vmin;

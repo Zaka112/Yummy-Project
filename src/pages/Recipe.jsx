@@ -1,7 +1,12 @@
-import React from 'react'
+import React from "react";
+
+
+import Search from "../components/Search";
 
 export default function Recipe() {
   return (
-    <div>Recipe</div>
-  )
+    <div>
+      <Search></Search>
+    </div>
+  );
 }

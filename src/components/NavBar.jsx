@@ -1,12 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import Logo from "../assets/chef.png";
+import logo from "../assets/chef.png";
 export default function NavBar() {
   return (
     <div className="navBar">
       <Link to="/">
-        <img src={Logo} height={50} alt="ChefLogo" />
+        <img src={logo} height={50} alt="ChefLogo" />
       </Link>
 
       <Link to="/">
