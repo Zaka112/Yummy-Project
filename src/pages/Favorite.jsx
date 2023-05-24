@@ -6,7 +6,7 @@ export default function Favorite({ favRecipes }) {
       <h2>Favorite Recipe List</h2>
       <div className="favList">
         {favRecipes.map((item) => (
-          <div className="favItem">
+          <div className="favItem" key= {item.idMeal}>
             <h1>{item.strMeal}</h1>
             <h3>{item.strCategory}</h3>
             <div>

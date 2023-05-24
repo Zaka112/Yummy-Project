@@ -104,8 +104,9 @@ export default function RecipeItem({
             <IconButton
               aria-label="add to favorites"
               sx={favAdded ? { color: red[700] } : []}
+              onClick={() => dealFavRecipe(recipe)}
             >
-              <FavoriteIcon onClick={() => dealFavRecipe(recipe)} />
+              <FavoriteIcon  />
             </IconButton>
             <IconButton>
               <ShareIcon />
