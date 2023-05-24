@@ -72,11 +72,6 @@ export default function RecipeItem({
                 {recipe.strMeal[0]}
               </Avatar>
             }
-            action={
-              <IconButton>
-                <MoreVertIcon />
-              </IconButton>
-            }
             title={recipe.strMeal}
             subheader={recipe.strCategory}
           />
@@ -106,10 +101,7 @@ export default function RecipeItem({
               sx={favAdded ? { color: red[700] } : []}
               onClick={() => dealFavRecipe(recipe)}
             >
-              <FavoriteIcon  />
-            </IconButton>
-            <IconButton>
-              <ShareIcon />
+              <FavoriteIcon />
             </IconButton>
             <ExpandMore
               expand={expanded}
