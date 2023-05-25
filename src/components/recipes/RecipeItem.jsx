@@ -46,7 +46,11 @@ export default function RecipeItem({
       (favItem) => favItem.idMeal === newItem.idMeal
     );
     if (filter.length > 0) {
-      alert("Item Already in fav"); //I know it is not good idea to have alert here. But until I figure out to remove the item
+      const newList = favRecipes.filter(
+        (favRecipe) => favRecipe.idMeal !== newItem.idMeal
+      );
+      setFavRecipes(newList);
+      setFavAdded(false);
     } else {
       const result = [...favRecipes, newItem];
       setFavRecipes(result);
