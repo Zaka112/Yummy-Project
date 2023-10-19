@@ -41,11 +41,13 @@ export default function RecipeItem({
   const handleExpandClick = () => {
     setExpanded(!expanded);
   };
+
   function dealFavRecipe(newItem) {
     const filter = favRecipes.filter(
       (favItem) => favItem.idMeal === newItem.idMeal
     );
     if (filter.length > 0) {
+      // using back button favAdded state refreshes which make the heart icon unliked/uncolored
       const newList = favRecipes.filter(
         (favRecipe) => favRecipe.idMeal !== newItem.idMeal
       );
