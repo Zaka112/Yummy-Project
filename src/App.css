@@ -33,8 +33,11 @@
   align-items: center;
 }
 .homeImages {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  color: black;
+  gap: 1rem;
+  
 }
 .homeImages img {
   width: 175px;
@@ -66,3 +69,16 @@
   height: 40vmin;
   pointer-events: none;
 }
+@media screen and (max-width:600px) {
+  .homeImages img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  
+}
+@media screen and (max-width:320px) {
+  .homeImages{
+    display: flex;
+  flex-direction: column;
+  }}
