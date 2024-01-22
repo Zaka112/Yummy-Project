@@ -37,7 +37,6 @@
   grid-template-columns: repeat(5, 1fr);
   color: black;
   gap: 1rem;
-  
 }
 .homeImages img {
   width: 175px;
@@ -69,16 +68,31 @@
   height: 40vmin;
   pointer-events: none;
 }
-@media screen and (max-width:600px) {
+@media screen and (max-width: 600px) {
   .homeImages img {
     width: 50px;
     height: 50px;
     border-radius: 50%;
   }
-  
+
+  .recipeGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    color: black;
+    gap: 1rem;
+    margin: 20px;
+  }
 }
-@media screen and (max-width:320px) {
-  .homeImages{
+@media screen and (max-width: 320px) {
+  .homeImages {
     display: flex;
-  flex-direction: column;
-  }}
+    flex-direction: column;
+  }
+  .recipeGrid {
+    display: flex;
+    flex-direction: column;
+    color: black;
+    gap: 1rem;
+    margin: 20px;
+  }
+}
